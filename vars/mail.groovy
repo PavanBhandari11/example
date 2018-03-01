@@ -1,3 +1,8 @@
+#!/usr/bin/env groovy
+
+/**
+ * Send notifications based on build status string
+ */
 def call(Closure body) {
     node('maven') {
         body()
@@ -14,4 +19,3 @@ def call(Closure body) {
     )
         }
    }
-}

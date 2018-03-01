@@ -3,7 +3,6 @@
 /**
  * Send notifications based on build status string
  */
-@noncps
 def call(buildStatus = 'STARTED') {
   // build status of null means successful
   buildStatus = buildStatus ?: 'SUCCESS'

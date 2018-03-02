@@ -1,4 +1,4 @@
-ef notifyStatusChangeViaEmail(buildStatus) {
+def notifyStatusChangeViaEmail(buildStatus) {
     def status
 
     switch (buildStatus) {

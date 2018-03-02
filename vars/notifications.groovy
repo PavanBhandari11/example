@@ -31,7 +31,7 @@ def call(buildStatus = 'STARTED') {
   //slackSend (color: colorCode, message: summary)
 
   //hipchatSend (color: color, notify: true, message: summary)
-
+  echo "-----------------------// 1"
   emailext (
       to: 'nitin.m@kloud9.nyc',
       subject: subject,

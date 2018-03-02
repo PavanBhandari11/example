@@ -7,7 +7,7 @@ def call(body) {
 
   node {
       emailext (
-          to: 'nitinneet23@gmail.com',
+          to: 'nitin.m@kloud9.nyc',
           subject: 'subject',
           body: 'details',
           recipientProviders: [[$class: 'DevelopersRecipientProvider']]

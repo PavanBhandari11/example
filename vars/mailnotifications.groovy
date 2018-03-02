@@ -11,9 +11,7 @@ def notifyStatusChangeViaEmail(buildStatus) {
             break
 
         case 'FAILURE':
-            status = 'has turned RED 
-:(
-'
+            status = 'has turned RED :('
             break
     }
 
@@ -36,6 +34,4 @@ pipeline {
             notifyStatusChangeViaEmail(currentBuild.currentResult)
         }
     }
-
-
 }

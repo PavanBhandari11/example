@@ -8,8 +8,7 @@ def sendNotification(buildStatus) {
 }
 
 pipeline {
-  ...
-
+  
   post {
     changed {
       sendNotification(currentBuild.currentResult)

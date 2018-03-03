@@ -25,13 +25,10 @@ def notifyStatusChangeViaEmail(buildStatus) {
     )
 }
 
-pipeline {
-    ...
 
     post {
         changed {
             // Will trigger only when job status changes: GREEN -> RED, RED -> GREEN, etc
             notifyStatusChangeViaEmail(currentBuild.currentResult)
-        }
     }
 }

@@ -1,5 +1,4 @@
     def call(body) {
-    // evaluate the body block, and collect configuration into the object
     def pipelineParams= [:]
     def buildStatus = 'STARTED'
     def colorCode = '#FF0000'
@@ -9,23 +8,21 @@
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = pipelineParams
     body()
-    // Override default values based on build status
     if (buildStatus == 'STARTED') {
-    color = 'YELLOW'
-    colorCode = '#FFFF00'
+        color = 'YELLOW'
+        colorCode = '#FFFF00'
     } else if (buildStatus == 'SUCCESS') {
-    color = 'GREEN'
-    colorCode = '#00FF00'
+        color = 'GREEN'
+        colorCode = '#00FF00'
     } else {
-    color = 'RED'
-    colorCode = '#FF0000'
+        color = 'RED'
+        colorCode = '#FF0000'
     }
-
-  node {
-      emailext (
-          to:'nitin.m@kloud9.nyc',
-          subject: 'subject',
-          body: 'details',
+        node {
+          emailext (
+              to:'nitin.m@kloud9.nyc',
+              subject: 'subject',
+              body: 'details',
         )
   }
 }

@@ -3,7 +3,6 @@ def call(body) {
 body.resolveStrategy = Closure.DELEGATE_FIRST
 body.delegate = pipelineParams
 body()
-def pipelineParams= [:]
 def buildStatus = 'STARTED'
 def colorName = 'RED'
 def colorCode = '#FF0000'

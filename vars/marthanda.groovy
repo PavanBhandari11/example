@@ -7,7 +7,7 @@ def call(body) {
 
   node {
       emailext (
-          to: 'nitin.m@kloud9.nyc',
+          to: me 'nitin.m@kloud9.nyc',
           subject: 'subject',
           body: 'details',
         )

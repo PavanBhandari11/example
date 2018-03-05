@@ -1,7 +1,7 @@
     def call(body) {
     // evaluate the body block, and collect configuration into the object
     def pipelineParams= [:]
-    def buildStatus = 'STARTED')
+    def buildStatus = 'STARTED'
     def colorName = 'RED'
     def colorCode = '#FF0000'
     def subject = "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"

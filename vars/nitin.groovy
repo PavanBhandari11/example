@@ -25,7 +25,7 @@
 
   node {
       emailext (
-          to: me 'nitin.m@kloud9.nyc',
+          to:'nitin.m@kloud9.nyc',
           subject: 'subject',
           body: 'details',
         )

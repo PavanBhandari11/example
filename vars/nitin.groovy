@@ -22,11 +22,6 @@
       color = 'RED'
       colorCode = '#FF0000'
     }
-      // evaluate the body block, and collect configuration into the object
-      def pipelineParams= [:]
-      body.resolveStrategy = Closure.DELEGATE_FIRST
-      body.delegate = pipelineParams
-      body()
 
     node {
         emailext (

@@ -1,4 +1,4 @@
-package org.k9.demo
+package org.k9.first
 
 class Hello implements Serializable {
   def config

@@ -1,4 +1,4 @@
-package org.k9.*
+package org.k9.test
 
 class Test implements Serializable {
   def config
@@ -10,7 +10,7 @@ class Test implements Serializable {
   }
   void wish() {
     this.script.stage ('HBD'){
-    this.script.echo "stage1" + this.comfig.name
+    this.script.echo "stage1" + this.config.name
   }
   }
   }

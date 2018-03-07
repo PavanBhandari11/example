@@ -12,10 +12,11 @@ class Scm implements Serializable {
     this.script.stage ('wishes'){
     this.script.echo "HBD" + this.comfig.name
   }
+
+  void gitclone () {
      this.script.stage('Git clone') {
-      git 'https://github.com/srinivasdevops376/springmvc-helloworld.git'          
-      mvnHome = '/opt/maven'
-      usrHome = '/home/srinivasdevops376'
+      git 'https://github.com/srinivasdevops376/springmvc-helloworld.git'
    }
   }
+}
 }

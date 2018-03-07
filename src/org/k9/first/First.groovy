@@ -1,10 +1,10 @@
 package org.k9.first
 
-class Hello implements Serializable {
+class First implements Serializable {
   def config
   def script
 
-  Hello(script,config) {
+  First(script,config) {
     this.config = config
     this.script = script
   }

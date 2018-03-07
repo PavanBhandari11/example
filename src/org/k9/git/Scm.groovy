@@ -1,4 +1,4 @@
-package org.k9.*
+package org.k9.git
 
 class Scm implements Serializable {
   def config

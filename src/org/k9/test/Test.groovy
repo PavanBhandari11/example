@@ -9,7 +9,7 @@ class Test implements Serializable {
     this.script = script
   }
   void wish() {
-    this.script.stage ('wishes'){
+    this.script.stage ('HBD'){
     this.script.echo "stage1" + this.comfig.name
   }
   }

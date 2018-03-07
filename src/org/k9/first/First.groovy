@@ -14,5 +14,4 @@ void wish()
     this.script.sh('echo Hello ' + this.config.name)
   } 
   }
-
 }

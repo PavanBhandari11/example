@@ -11,7 +11,7 @@ class One {
 
   void tdemo() {
     this.script.stage('Building Image') {
-       this.script.echo "stage 1" + this.config.version
+       this.script.echo "stage " + this.config.version
     }
   }
 }

@@ -9,7 +9,7 @@ class Wish implements Serializable {
   }
   void build() {
     this.script.stage('HBD to nitin'){
-    this.script.echo 'HBD' + this.config.name
+    this.script.echo HBD + this.config.name
   }
   }
   }

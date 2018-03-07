@@ -10,7 +10,7 @@ class First implements Serializable {
   }
 void wish()
   {
-    this.script.stage('wish'){
+    this.script.stage('HBD'){
     this.script.sh('echo HBD' + this.config.name)
   } 
   }

@@ -1,5 +1,5 @@
 package org.k9.fest
-class Wish implements Serializable {
+class Wish {
   def config
   def script
 

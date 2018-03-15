@@ -12,7 +12,7 @@ class Git {
   
   void checkout(){   
   this.script.stage ('git checkout') {
-  this.script.git(giturl:this.config.giturl, branch:this.config.branch)
+  this.script.git(url:this.config.giturl, branch:this.config.branch)
   }
   }
 }

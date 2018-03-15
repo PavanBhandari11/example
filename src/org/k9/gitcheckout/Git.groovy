@@ -1,5 +1,5 @@
-package org.k9.git
-import org.k9.gitcheckout.*
+package org.k9.gitcheckout
+import org.k9.*
 
 class git {
   def config

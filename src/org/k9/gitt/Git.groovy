@@ -1,17 +1,17 @@
-package org.k9.gitcheckout
+package org.k9.gitt
 import org.k9.*
 
-class git {
+class Git {
   def config
   def script
 
-  git(script,config) {
+  Git(script,config) {
     this.config = config
     this.script = script
   }
   
   void checkout(){   
   this.script.stage ('git checkout') {
-  this.script.git(scm:this.config.giturl, branch:this.config.branch)
+  this.script.git(giturl:this.config.giturl, branch:this.config.branch)
   }
   }

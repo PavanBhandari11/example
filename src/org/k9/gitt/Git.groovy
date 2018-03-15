@@ -15,3 +15,4 @@ class Git {
   this.script.git(giturl:this.config.giturl, branch:this.config.branch)
   }
   }
+}

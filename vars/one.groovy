@@ -7,10 +7,10 @@ def call(body) {
 
     node {
         stage('stage 1') {
-            echo "stage 1 ${config.version}"
+            echo "hello world"
         }
         stage('stage 2') {
-            echo "statge 2"
+            echo "hi nitin"
         }
     }
 
